@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alejandro Nava | Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-left">
+      <span class="logo">AN</span>
+      <span class="site-title">Alejandro Nava</span>
+    </div>
+    <nav class="nav-right">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Software Engineering Student and Builder</h1>
+        <p>
+          I am a Computer Science student at UCI who loves building games, web apps,
+          and teaching others how to code. I enjoy working with Python, C++, and web
+          technologies to turn ideas into real projects.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I am focused on software engineering, systems, and game development.
+        I enjoy working on practical projects such as AI agents, web tools, and games,
+        and I am always looking to improve my engineering fundamentals.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Checkers AI with MCTS</h3>
+          <p>
+            A checkers AI that uses Monte Carlo Tree Search and heuristic evaluation
+            to compete against strong agents.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/<your-username>/<repo-name>" target="_blank">Code</a>
+            <!-- <a href="https://your-demo-link.com" target="_blank">Live demo</a> -->
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Web App Project</h3>
+          <p>
+            A full stack web application that showcases my skills in building APIs and
+            modern frontends.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/<your-username>/<repo-name>" target="_blank">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Teaching and Curriculum</h3>
+          <p>
+            Custom programming exercises and games created for students, focusing on
+            algorithms, data structures, and problem solving.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/<your-username>" target="_blank">More on GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li>
+          <h3>Learning Assistant / Instructor</h3>
+          <p>
+            Helped students learn Python, C++, and algorithms through projects and guided practice.
+          </p>
+        </li>
+        <li>
+          <h3>Personal Projects</h3>
+          <p>
+            Built games, AI agents, and web tools that deepen my understanding of software design and architecture.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>
+        The best way to reach me is by email or LinkedIn.
+      </p>
+      <ul class="contact-list">
+        <li>
+          Email:
+          <a href="mailto:your.email@uci.edu">your.email@uci.edu</a>
+        </li>
+        <li>
+          GitHub:
+          <a href="https://github.com/<your-username>" target="_blank">
+            github.com/<your-username>
+          </a>
+        </li>
+        <li>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/<your-handle>/" target="_blank">
+            linkedin.com/in/<your-handle>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Alejandro Nava. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
