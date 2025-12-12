@@ -1,145 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alejandro Nava | Software Engineer</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="nav">
-    <div class="nav-left">
-      <span class="logo">AN</span>
-      <span class="site-title">Alejandro Nava</span>
+  <header class="site-header" id="top">
+    <div class="container nav-container">
+      <!-- TODO: Replace with your name or logo -->
+      <div class="brand" aria-label="Portfolio brand">Your Name</div>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="nav-right">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
 
   <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Software Engineering Student and Builder</h1>
-        <p>
-          I am a Computer Science student at UCI who loves building games, web apps,
-          and teaching others how to code. I enjoy working with Python, C++, and web
-          technologies to turn ideas into real projects.
-        </p>
-        <div class="hero-buttons">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn secondary" href="#contact">Get in touch</a>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <!-- TODO: Replace with your name and headline -->
+          <p class="eyebrow">Software Engineer & CS Student</p>
+          <h1 id="hero-heading">Your Name</h1>
+          <p class="hero-subtitle">UCI Computer Science Student and Software Engineer</p>
+          <p class="hero-body">Focused on backend development, systems programming, game development, and empowering others through teaching and mentorship.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button ghost" href="resume.pdf" target="_blank" rel="noreferrer noopener">Download Resume</a>
+          </div>
+        </div>
+        <div class="hero-accent" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="skills-heading">Skills</h2>
+          <p class="section-subtitle">Snapshot of tools and languages. Replace labels to match your comfort level.</p>
+        </div>
+        <div class="skills-grid">
+          <!-- TODO: Replace skill names and tags with your own -->
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3>Python</h3>
+              <span class="skill-level">Primary</span>
+            </div>
+            <div class="skill-tags" aria-label="Categories"><span>Backend</span><span>Data</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3>C++</h3>
+              <span class="skill-level">Primary</span>
+            </div>
+            <div class="skill-tags"><span>Systems</span><span>Performance</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3>Java</h3>
+              <span class="skill-level">Comfortable</span>
+            </div>
+            <div class="skill-tags"><span>Backend</span><span>OOP</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3>JavaScript</h3>
+              <span class="skill-level">Comfortable</span>
+            </div>
+            <div class="skill-tags"><span>Frontend</span><span>UI</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3>TypeScript</h3>
+              <span class="skill-level">Learning</span>
+            </div>
+            <div class="skill-tags"><span>Frontend</span><span>Typed</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3>HTML &amp; CSS</h3>
+              <span class="skill-level">Primary</span>
+            </div>
+            <div class="skill-tags"><span>Frontend</span><span>Responsive</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3>SQL</h3>
+              <span class="skill-level">Comfortable</span>
+            </div>
+            <div class="skill-tags"><span>Data</span><span>Backend</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3>MIPS Assembly</h3>
+              <span class="skill-level">Learning</span>
+            </div>
+            <div class="skill-tags"><span>Systems</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3>Git</h3>
+              <span class="skill-level">Primary</span>
+            </div>
+            <div class="skill-tags"><span>Collaboration</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3>Linux</h3>
+              <span class="skill-level">Primary</span>
+            </div>
+            <div class="skill-tags"><span>Systems</span><span>Tooling</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3>React</h3>
+              <span class="skill-level">Comfortable</span>
+            </div>
+            <div class="skill-tags"><span>Frontend</span><span>UI</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3>FastAPI</h3>
+              <span class="skill-level">Comfortable</span>
+            </div>
+            <div class="skill-tags"><span>Backend</span><span>APIs</span></div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section">
-      <h2>About</h2>
-      <p>
-        I am focused on software engineering, systems, and game development.
-        I enjoy working on practical projects such as AI agents, web tools, and games,
-        and I am always looking to improve my engineering fundamentals.
-      </p>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-
-      <div class="card-grid">
-        <article class="card">
-          <h3>Checkers AI with MCTS</h3>
-          <p>
-            A checkers AI that uses Monte Carlo Tree Search and heuristic evaluation
-            to compete against strong agents.
-          </p>
-          <div class="card-links">
-            <a href="https://github.com/<your-username>/<repo-name>" target="_blank">Code</a>
-            <!-- <a href="https://your-demo-link.com" target="_blank">Live demo</a> -->
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Web App Project</h3>
-          <p>
-            A full stack web application that showcases my skills in building APIs and
-            modern frontends.
-          </p>
-          <div class="card-links">
-            <a href="https://github.com/<your-username>/<repo-name>" target="_blank">Code</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Teaching and Curriculum</h3>
-          <p>
-            Custom programming exercises and games created for students, focusing on
-            algorithms, data structures, and problem solving.
-          </p>
-          <div class="card-links">
-            <a href="https://github.com/<your-username>" target="_blank">More on GitHub</a>
-          </div>
-        </article>
+    <section id="experience" class="section" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="experience-heading">Experience</h2>
+          <p class="section-subtitle">Impact-focused highlights. Replace with your roles and results.</p>
+        </div>
+        <div class="experience-list">
+          <!-- TODO: Replace placeholder experience entries with real roles -->
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>Learning Assistant</h3>
+                <p class="org">University of California, Irvine</p>
+              </div>
+              <span class="date">Sep 2023 – Jun 2024</span>
+            </div>
+            <ul>
+              <li>Guided students through foundational computer science concepts, improving exam readiness.</li>
+              <li>Ran code reviews emphasizing readability and problem-solving strategies.</li>
+              <li>Partnered with instructors to tailor course content for diverse learning styles.</li>
+            </ul>
+          </article>
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>Coding Instructor</h3>
+                <p class="org">Tech Education Org</p>
+              </div>
+              <span class="date">Jun 2022 – Aug 2023</span>
+            </div>
+            <ul>
+              <li>Created project-based curricula covering Python, JavaScript, and game logic fundamentals.</li>
+              <li>Mentored cohorts of 20+ students, increasing completion rates through individualized support.</li>
+              <li>Introduced Git workflows to prepare students for collaborative software development.</li>
+            </ul>
+          </article>
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>Game Development Lead</h3>
+                <p class="org">Independent Project</p>
+              </div>
+              <span class="date">Jan 2021 – Present</span>
+            </div>
+            <ul>
+              <li>Designed gameplay systems and audio events leveraging Unreal Engine and Wwise pipelines.</li>
+              <li>Integrated feedback loops from user testing to refine mechanics and pacing.</li>
+              <li>Optimized performance across builds by profiling hot paths and reducing asset overhead.</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- Experience -->
-    <section id="experience" class="section">
-      <h2>Experience</h2>
-      <ul class="timeline">
-        <li>
-          <h3>Learning Assistant / Instructor</h3>
-          <p>
-            Helped students learn Python, C++, and algorithms through projects and guided practice.
-          </p>
-        </li>
-        <li>
-          <h3>Personal Projects</h3>
-          <p>
-            Built games, AI agents, and web tools that deepen my understanding of software design and architecture.
-          </p>
-        </li>
-      </ul>
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="projects-heading">Projects</h2>
+          <p class="section-subtitle">Select work built for real users and recruiters. Swap descriptions and links with your own details.</p>
+        </div>
+        <div class="projects-grid">
+          <!-- TODO: Replace project summaries, stacks, and links with your own -->
+          <article class="project-card">
+            <div class="project-heading">
+              <h3>Gunpla Build Advisor</h3>
+              <div class="project-tags"><span>Python</span><span>FastAPI</span><span>OpenAI API</span></div>
+            </div>
+            <p class="project-desc">AI-powered recommendation tool that suggests custom Gunpla builds based on user preferences and inventory.</p>
+            <ul>
+              <li>Generated tailored builds with explainable rationales to boost user trust.</li>
+              <li>Cached common prompts, reducing response latency by 30%.</li>
+              <li>Built dashboard for comparing loadouts and sharing presets.</li>
+            </ul>
+            <div class="project-links">
+              <a class="button ghost" href="https://github.com/" aria-label="Gunpla Build Advisor GitHub">GitHub</a>
+              <a class="button primary" href="#" aria-label="Gunpla Build Advisor Live Demo">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-heading">
+              <h3>Kawai'ian Isolation</h3>
+              <div class="project-tags"><span>Unreal Engine</span><span>C++</span><span>Wwise</span></div>
+            </div>
+            <p class="project-desc">Narrative-driven horror game integrating reactive audio cues and dynamic lighting for immersion.</p>
+            <ul>
+              <li>Implemented event-driven soundscapes tied to AI state changes.</li>
+              <li>Profiling reduced frame drops during complex sequences by 18%.</li>
+              <li>Built modular level scripting toolkit to accelerate iteration.</li>
+            </ul>
+            <div class="project-links">
+              <a class="button ghost" href="https://github.com/" aria-label="Kawai'ian Isolation GitHub">GitHub</a>
+              <a class="button primary" href="#" aria-label="Kawai'ian Isolation Live Demo">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-heading">
+              <h3>Community Service Companion App</h3>
+              <div class="project-tags"><span>Flutter</span><span>Firebase</span><span>Google Maps</span><span>OpenAI</span></div>
+            </div>
+            <p class="project-desc">Mobile companion that matches volunteers with events, automates reminders, and tracks impact badges.</p>
+            <ul>
+              <li>Integrated location search and route previews via Maps SDK.</li>
+              <li>Automated reminder flows increased event check-ins by 25%.</li>
+              <li>Added AI-powered suggestion feed for recurring opportunities.</li>
+            </ul>
+            <div class="project-links">
+              <a class="button ghost" href="https://github.com/" aria-label="Community Service Companion GitHub">GitHub</a>
+              <a class="button primary" href="#" aria-label="Community Service Companion Live Demo">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-heading">
+              <h3>USACO Training Toolkit</h3>
+              <div class="project-tags"><span>TypeScript</span><span>React</span><span>Node.js</span></div>
+            </div>
+            <p class="project-desc">Competitive programming practice suite with curated problem sets, analytics, and spaced repetition drills.</p>
+            <ul>
+              <li>Delivered custom visualizations for performance over time.</li>
+              <li>Built code runner sandbox with structured test feedback.</li>
+              <li>Implemented spaced repetition scheduler to reinforce concepts.</li>
+            </ul>
+            <div class="project-links">
+              <a class="button ghost" href="https://github.com/" aria-label="USACO Training Toolkit GitHub">GitHub</a>
+              <a class="button primary" href="#" aria-label="USACO Training Toolkit Live Demo">Live Demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>
-        The best way to reach me is by email or LinkedIn.
-      </p>
-      <ul class="contact-list">
-        <li>
-          Email:
-          <a href="mailto:your.email@uci.edu">your.email@uci.edu</a>
-        </li>
-        <li>
-          GitHub:
-          <a href="https://github.com/<your-username>" target="_blank">
-            github.com/<your-username>
-          </a>
-        </li>
-        <li>
-          LinkedIn:
-          <a href="https://www.linkedin.com/in/<your-handle>/" target="_blank">
-            linkedin.com/in/<your-handle>
-          </a>
-        </li>
-      </ul>
+    <section id="about" class="section alt" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="about-heading">About</h2>
+          <p class="section-subtitle">Share who you are, what drives you, and the impact you want to make.</p>
+        </div>
+        <div class="about-content">
+          <!-- TODO: Replace with your own summary and focus areas -->
+          <p>I'm a computer science student passionate about building resilient systems and guiding peers through clear communication and mentorship. I enjoy bridging backend reliability with thoughtful user experiences.</p>
+          <div class="pill-list" aria-label="Focus areas">
+            <span class="pill">Clean code</span>
+            <span class="pill">Student mentorship</span>
+            <span class="pill">Game development</span>
+            <span class="pill">Backend systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="contact-heading">Contact</h2>
+          <p class="section-subtitle">Invite recruiters to reach out. Replace links with your real profiles.</p>
+        </div>
+        <div class="contact-card">
+          <!-- TODO: Update email, GitHub, LinkedIn, and resume links -->
+          <p class="contact-text">Interested in collaborating or learning more? Let's talk.</p>
+          <div class="contact-links">
+            <a href="mailto:youremail@example.com">youremail@example.com</a>
+            <a href="https://github.com/" aria-label="GitHub profile">GitHub</a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn profile">LinkedIn</a>
+            <a href="resume.pdf" aria-label="Download resume">Resume</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Alejandro Nava. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2024 Your Name. Built with care for GitHub Pages.</p>
+      <a class="back-to-top" href="#top">Back to top</a>
+    </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
