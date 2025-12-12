@@ -253,6 +253,27 @@ img {
   font-size: 18px;
 }
 
+.skill-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--accent-light), #ffffff);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 12px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.12);
+  letter-spacing: 0.04em;
+}
+
 .skill-level {
   padding: 6px 10px;
   background: var(--accent-light);
