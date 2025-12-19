@@ -3,360 +3,309 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Software Engineering Portfolio</title>
+  <title>Alejandro Nava | Portfolio</title>
+  <meta name="description" content="Dark minimal portfolio for software engineer Alejandro Nava.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header" id="top">
-    <div class="container nav-container">
-      <!-- TODO: Replace with your name or logo -->
-      <div class="brand" aria-label="Portfolio brand">Your Name</div>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary">
+      <a class="brand" href="#top">Alejandro Nava</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <nav class="site-nav" aria-label="Primary">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <!-- TODO: Replace with your name and headline -->
-          <p class="eyebrow">Software Engineer & CS Student</p>
-          <h1 id="hero-heading">Your Name</h1>
-          <p class="hero-subtitle">UCI Computer Science Student and Software Engineer</p>
-          <p class="hero-body">Focused on backend development, systems programming, game development, and empowering others through teaching and mentorship.</p>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Dark minimal portfolio</p>
+          <h1 id="hero-title">Software Engineer and Builder</h1>
+          <p class="hero-subtitle">I craft thoughtful digital experiences with modern web technologies, focused on clarity, performance, and real-world impact.</p>
           <div class="hero-actions">
             <a class="button primary" href="#projects">View Projects</a>
-            <a class="button ghost" href="resume.pdf" target="_blank" rel="noreferrer noopener">Download Resume</a>
+            <a class="button secondary" href="#contact">Get in Touch</a>
+          </div>
+          <div class="hero-links" aria-label="Social links">
+            <a href="https://github.com/" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.55 2.87 8.41 6.84 9.77.5.1.68-.22.68-.48v-1.7c-2.78.62-3.37-1.36-3.37-1.36-.45-1.2-1.11-1.52-1.11-1.52-.9-.64.07-.63.07-.63 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.34 1.11 2.91.85.09-.67.35-1.11.63-1.37-2.22-.26-4.56-1.15-4.56-5.12 0-1.13.39-2.06 1.03-2.79-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.07a9.4 9.4 0 0 1 5 0C17.1 5.26 17.94 5.54 17.94 5.54c.55 1.43.2 2.5.1 2.75.64.73 1.03 1.66 1.03 2.79 0 3.98-2.34 4.85-4.58 5.1.36.32.68.95.68 1.92v2.85c0 .26.18.59.69.48A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2z" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4.98 3.5a2.48 2.48 0 1 1 0 4.96 2.48 2.48 0 0 1 0-4.96zM3 8.98h3.96V21H3V8.98zM9.2 8.98h3.8v1.64h.05c.53-1 1.82-2.05 3.74-2.05 4 0 4.74 2.7 4.74 6.2V21h-3.96v-5.35c0-1.28-.02-2.93-1.79-2.93-1.79 0-2.06 1.4-2.06 2.84V21H9.2V8.98z" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="mailto:hello@example.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.5l9 5.25 9-5.25V7H3zm18 10V9.75l-8.53 4.98a1 1 0 0 1-.94 0L3 9.75V17h18z" fill="currentColor"/>
+              </svg>
+            </a>
           </div>
         </div>
-        <div class="hero-accent" aria-hidden="true"></div>
       </div>
     </section>
 
-    <section id="skills" class="section" aria-labelledby="skills-heading">
+    <section id="about" class="section" aria-labelledby="about-title">
       <div class="container">
-        <div class="section-header">
-          <h2 id="skills-heading">Skills</h2>
-          <p class="section-subtitle">Snapshot of tools and languages. Replace labels to match your comfort level.</p>
-        </div>
-        <div class="skills-grid">
-          <!-- TODO: Replace skill names and tags with your own -->
-          <article class="skill-card">
-            <div class="skill-top">
-              <div class="skill-name">
-                <span class="skill-icon" aria-hidden="true">Py</span>
-                <h3>Python</h3>
-              </div>
-              <span class="skill-level">Primary</span>
-            </div>
-            <div class="skill-tags" aria-label="Categories"><span>Backend</span><span>Data</span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-top">
-              <div class="skill-name">
-                <span class="skill-icon" aria-hidden="true">C++</span>
-                <h3>C++</h3>
-              </div>
-              <span class="skill-level">Primary</span>
-            </div>
-            <div class="skill-tags"><span>Systems</span><span>Performance</span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-top">
-              <div class="skill-name">
-                <span class="skill-icon" aria-hidden="true">Jv</span>
-                <h3>Java</h3>
-              </div>
-              <span class="skill-level">Comfortable</span>
-            </div>
-            <div class="skill-tags"><span>Backend</span><span>OOP</span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-top">
-              <div class="skill-name">
-                <span class="skill-icon" aria-hidden="true">JS</span>
-                <h3>JavaScript</h3>
-              </div>
-              <span class="skill-level">Comfortable</span>
-            </div>
-            <div class="skill-tags"><span>Frontend</span><span>UI</span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-top">
-              <div class="skill-name">
-                <span class="skill-icon" aria-hidden="true">TS</span>
-                <h3>TypeScript</h3>
-              </div>
-              <span class="skill-level">Learning</span>
-            </div>
-            <div class="skill-tags"><span>Frontend</span><span>Typed</span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-top">
-              <div class="skill-name">
-                <span class="skill-icon" aria-hidden="true">HTML</span>
-                <h3>HTML &amp; CSS</h3>
-              </div>
-              <span class="skill-level">Primary</span>
-            </div>
-            <div class="skill-tags"><span>Frontend</span><span>Responsive</span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-top">
-              <div class="skill-name">
-                <span class="skill-icon" aria-hidden="true">SQL</span>
-                <h3>SQL</h3>
-              </div>
-              <span class="skill-level">Comfortable</span>
-            </div>
-            <div class="skill-tags"><span>Data</span><span>Backend</span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-top">
-              <div class="skill-name">
-                <span class="skill-icon" aria-hidden="true">ASM</span>
-                <h3>MIPS Assembly</h3>
-              </div>
-              <span class="skill-level">Learning</span>
-            </div>
-            <div class="skill-tags"><span>Systems</span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-top">
-              <div class="skill-name">
-                <span class="skill-icon" aria-hidden="true">Git</span>
-                <h3>Git</h3>
-              </div>
-              <span class="skill-level">Primary</span>
-            </div>
-            <div class="skill-tags"><span>Collaboration</span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-top">
-              <div class="skill-name">
-                <span class="skill-icon" aria-hidden="true">Ln</span>
-                <h3>Linux</h3>
-              </div>
-              <span class="skill-level">Primary</span>
-            </div>
-            <div class="skill-tags"><span>Systems</span><span>Tooling</span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-top">
-              <div class="skill-name">
-                <span class="skill-icon" aria-hidden="true">Rct</span>
-                <h3>React</h3>
-              </div>
-              <span class="skill-level">Comfortable</span>
-            </div>
-            <div class="skill-tags"><span>Frontend</span><span>UI</span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-top">
-              <div class="skill-name">
-                <span class="skill-icon" aria-hidden="true">FA</span>
-                <h3>FastAPI</h3>
-              </div>
-              <span class="skill-level">Comfortable</span>
-            </div>
-            <div class="skill-tags"><span>Backend</span><span>APIs</span></div>
-          </article>
+        <header class="section-header">
+          <h2 id="about-title">About</h2>
+          <p>Building reliable, user-first software with a focus on clarity and craft.</p>
+        </header>
+        <div class="about-card">
+          <p>Hi, I'm Alejandro. I love turning complex ideas into calm, functional experiences. Right now I'm focused on full-stack development, design systems, and tools that help teams move faster.</p>
+          <div class="pill-group" aria-label="Focus areas">
+            <span class="pill">Product thinking</span>
+            <span class="pill">System design</span>
+            <span class="pill">Team collaboration</span>
+            <span class="pill">Open-source</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section" aria-labelledby="experience-heading">
+    <section id="projects" class="section" aria-labelledby="projects-title">
       <div class="container">
-        <div class="section-header">
-          <h2 id="experience-heading">Experience</h2>
-          <p class="section-subtitle">Impact-focused highlights. Replace with your roles and results.</p>
-        </div>
-        <div class="experience-list">
-          <!-- TODO: Replace placeholder experience entries with real roles -->
-          <article class="experience-card">
-            <div class="experience-header">
-              <div>
-                <h3>Learning Assistant</h3>
-                <p class="org">University of California, Irvine</p>
-              </div>
-              <span class="date">Sep 2023 – Jun 2024</span>
-            </div>
-            <ul>
-              <li>Guided students through foundational computer science concepts, improving exam readiness.</li>
-              <li>Ran code reviews emphasizing readability and problem-solving strategies.</li>
-              <li>Partnered with instructors to tailor course content for diverse learning styles.</li>
-            </ul>
-          </article>
-          <article class="experience-card">
-            <div class="experience-header">
-              <div>
-                <h3>Coding Instructor</h3>
-                <p class="org">Tech Education Org</p>
-              </div>
-              <span class="date">Jun 2022 – Aug 2023</span>
-            </div>
-            <ul>
-              <li>Created project-based curricula covering Python, JavaScript, and game logic fundamentals.</li>
-              <li>Mentored cohorts of 20+ students, increasing completion rates through individualized support.</li>
-              <li>Introduced Git workflows to prepare students for collaborative software development.</li>
-            </ul>
-          </article>
-          <article class="experience-card">
-            <div class="experience-header">
-              <div>
-                <h3>Game Development Lead</h3>
-                <p class="org">Independent Project</p>
-              </div>
-              <span class="date">Jan 2021 – Present</span>
-            </div>
-            <ul>
-              <li>Designed gameplay systems and audio events leveraging Unreal Engine and Wwise pipelines.</li>
-              <li>Integrated feedback loops from user testing to refine mechanics and pacing.</li>
-              <li>Optimized performance across builds by profiling hot paths and reducing asset overhead.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section" aria-labelledby="projects-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 id="projects-heading">Projects</h2>
-          <p class="section-subtitle">Select work built for real users and recruiters. Swap descriptions and links with your own details.</p>
-        </div>
+        <header class="section-header">
+          <h2 id="projects-title">Featured Projects</h2>
+          <p>A selection of projects I've worked on, from concept to deployment.</p>
+        </header>
         <div class="projects-grid">
-          <!-- TODO: Replace project summaries, stacks, and links with your own -->
           <article class="project-card">
-            <div class="project-heading">
-              <h3>Gunpla Build Advisor</h3>
-              <div class="project-tags"><span>Python</span><span>FastAPI</span><span>OpenAI API</span></div>
-            </div>
-            <p class="project-desc">AI-powered recommendation tool that suggests custom Gunpla builds based on user preferences and inventory.</p>
-            <ul>
-              <li>Generated tailored builds with explainable rationales to boost user trust.</li>
-              <li>Cached common prompts, reducing response latency by 30%.</li>
-              <li>Built dashboard for comparing loadouts and sharing presets.</li>
-            </ul>
-            <div class="project-links">
-              <a class="button ghost" href="https://github.com/" aria-label="Gunpla Build Advisor GitHub">GitHub</a>
-              <a class="button primary" href="#" aria-label="Gunpla Build Advisor Live Demo">Live Demo</a>
+            <div class="project-media" style="background-image: url('assets/project-01.svg');" role="img" aria-label="Abstract project illustration"></div>
+            <div class="project-body">
+              <h3>[Project Name]</h3>
+              <p>A collaborative task management platform with real-time updates and elegant dashboards.</p>
+              <div class="tag-row">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Express</span>
+              </div>
+              <div class="link-row">
+                <a href="https://github.com/" class="icon-link">
+                  <span>Code</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19a1 1 0 0 1-1-1v-2.75a3.25 3.25 0 0 1 1.03-2.38L12.5 9.5a2 2 0 0 0 0-2.83L10.33 4.5a1 1 0 1 1 1.41-1.41l2.17 2.17a4 4 0 0 1 0 5.66l-3.47 3.47a1.25 1.25 0 0 0-.37.89V18a1 1 0 0 1-1 1z" fill="currentColor"/><path d="M15 5a1 1 0 0 1 1 1v2.75a3.25 3.25 0 0 1-1.03 2.38L11.5 14.5a2 2 0 0 0 0 2.83l2.17 2.17a1 1 0 1 1-1.41 1.41l-2.17-2.17a4 4 0 0 1 0-5.66l3.47-3.47a1.25 1.25 0 0 0 .37-.89V6a1 1 0 0 1 1-1z" fill="currentColor"/></svg>
+                </a>
+                <a href="[Live Demo URL]" class="icon-link">
+                  <span>Live Demo</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z" fill="currentColor"/><path d="M5 5h6V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-2v6H5V5z" fill="currentColor"/></svg>
+                </a>
+              </div>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-heading">
-              <h3>Kawai'ian Isolation</h3>
-              <div class="project-tags"><span>Unreal Engine</span><span>C++</span><span>Wwise</span></div>
-            </div>
-            <p class="project-desc">Narrative-driven horror game integrating reactive audio cues and dynamic lighting for immersion.</p>
-            <ul>
-              <li>Implemented event-driven soundscapes tied to AI state changes.</li>
-              <li>Profiling reduced frame drops during complex sequences by 18%.</li>
-              <li>Built modular level scripting toolkit to accelerate iteration.</li>
-            </ul>
-            <div class="project-links">
-              <a class="button ghost" href="https://github.com/" aria-label="Kawai'ian Isolation GitHub">GitHub</a>
-              <a class="button primary" href="#" aria-label="Kawai'ian Isolation Live Demo">Live Demo</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-heading">
-              <h3>Community Service Companion App</h3>
-              <div class="project-tags"><span>Flutter</span><span>Firebase</span><span>Google Maps</span><span>OpenAI</span></div>
-            </div>
-            <p class="project-desc">Mobile companion that matches volunteers with events, automates reminders, and tracks impact badges.</p>
-            <ul>
-              <li>Integrated location search and route previews via Maps SDK.</li>
-              <li>Automated reminder flows increased event check-ins by 25%.</li>
-              <li>Added AI-powered suggestion feed for recurring opportunities.</li>
-            </ul>
-            <div class="project-links">
-              <a class="button ghost" href="https://github.com/" aria-label="Community Service Companion GitHub">GitHub</a>
-              <a class="button primary" href="#" aria-label="Community Service Companion Live Demo">Live Demo</a>
+            <div class="project-media" style="background-image: url('assets/project-02.svg');" role="img" aria-label="Abstract project illustration"></div>
+            <div class="project-body">
+              <h3>[Project Name]</h3>
+              <p>Weather insights experience with clean forecasts, alerting, and a calming UI.</p>
+              <div class="tag-row">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Sass</span>
+              </div>
+              <div class="link-row">
+                <a href="https://github.com/" class="icon-link">
+                  <span>Code</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19a1 1 0 0 1-1-1v-2.75a3.25 3.25 0 0 1 1.03-2.38L12.5 9.5a2 2 0 0 0 0-2.83L10.33 4.5a1 1 0 1 1 1.41-1.41l2.17 2.17a4 4 0 0 1 0 5.66l-3.47 3.47a1.25 1.25 0 0 0-.37.89V18a1 1 0 0 1-1 1z" fill="currentColor"/><path d="M15 5a1 1 0 0 1 1 1v2.75a3.25 3.25 0 0 1-1.03 2.38L11.5 14.5a2 2 0 0 0 0 2.83l2.17 2.17a11 1 0 1 1-1.41 1.41l-2.17-2.17a4 4 0 0 1 0-5.66l3.47-3.47a1.25 1.25 0 0 0 .37-.89V6a1 1 0 0 1 1-1z" fill="currentColor"/></svg>
+                </a>
+                <a href="[Live Demo URL]" class="icon-link">
+                  <span>Live Demo</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z" fill="currentColor"/><path d="M5 5h6V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-2v6H5V5z" fill="currentColor"/></svg>
+                </a>
+              </div>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-heading">
-              <h3>USACO Training Toolkit</h3>
-              <div class="project-tags"><span>TypeScript</span><span>React</span><span>Node.js</span></div>
-            </div>
-            <p class="project-desc">Competitive programming practice suite with curated problem sets, analytics, and spaced repetition drills.</p>
-            <ul>
-              <li>Delivered custom visualizations for performance over time.</li>
-              <li>Built code runner sandbox with structured test feedback.</li>
-              <li>Implemented spaced repetition scheduler to reinforce concepts.</li>
-            </ul>
-            <div class="project-links">
-              <a class="button ghost" href="https://github.com/" aria-label="USACO Training Toolkit GitHub">GitHub</a>
-              <a class="button primary" href="#" aria-label="USACO Training Toolkit Live Demo">Live Demo</a>
+            <div class="project-media" style="background-image: url('assets/project-03.svg');" role="img" aria-label="Abstract project illustration"></div>
+            <div class="project-body">
+              <h3>[Project Name]</h3>
+              <p>Developer analytics dashboard with focus on productivity insights and streamlined reporting.</p>
+              <div class="tag-row">
+                <span>JavaScript</span>
+                <span>Node.js</span>
+                <span>Charting</span>
+              </div>
+              <div class="link-row">
+                <a href="https://github.com/" class="icon-link">
+                  <span>Code</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19a1 1 0 0 1-1-1v-2.75a3.25 3.25 0 0 1 1.03-2.38L12.5 9.5a2 2 0 0 0 0-2.83L10.33 4.5a1 1 0 1 1 1.41-1.41l2.17 2.17a4 4 0 0 1 0 5.66l-3.47 3.47a1.25 1.25 0 0 0-.37.89V18a1 1 0 0 1-1 1z" fill="currentColor"/><path d="M15 5a1 1 0 0 1 1 1v2.75a3.25 3.25 0 0 1-1.03 2.38L11.5 14.5a2 2 0 0 0 0 2.83l2.17 2.17a1 1 0 1 1-1.41 1.41l-2.17-2.17a4 4 0 0 1 0-5.66l3.47-3.47a1.25 1.25 0 0 0 .37-.89V6a1 1 0 0 1 1-1z" fill="currentColor"/></svg>
+                </a>
+                <a href="[Live Demo URL]" class="icon-link">
+                  <span>Live Demo</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z" fill="currentColor"/><path d="M5 5h6V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-2v6H5V5z" fill="currentColor"/></svg>
+                </a>
+              </div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section alt" aria-labelledby="about-heading">
+    <section id="skills" class="section" aria-labelledby="skills-title">
       <div class="container">
-        <div class="section-header">
-          <h2 id="about-heading">About</h2>
-          <p class="section-subtitle">Share who you are, what drives you, and the impact you want to make.</p>
-        </div>
-        <div class="about-content">
-          <!-- TODO: Replace with your own summary and focus areas -->
-          <p>I'm a computer science student passionate about building resilient systems and guiding peers through clear communication and mentorship. I enjoy bridging backend reliability with thoughtful user experiences.</p>
-          <div class="pill-list" aria-label="Focus areas">
-            <span class="pill">Clean code</span>
-            <span class="pill">Student mentorship</span>
-            <span class="pill">Game development</span>
-            <span class="pill">Backend systems</span>
+        <header class="section-header">
+          <h2 id="skills-title">Tech Stack</h2>
+          <p>Technologies and tools I work with to bring ideas to life.</p>
+        </header>
+        <div class="skills-grid">
+          <div class="skill-tile" data-reveal style="--delay: 0s;">
+            <div class="skill-icon">HTML</div>
+            <span>HTML</span>
+          </div>
+          <div class="skill-tile" data-reveal style="--delay: 0.05s;">
+            <div class="skill-icon">CSS</div>
+            <span>CSS</span>
+          </div>
+          <div class="skill-tile" data-reveal style="--delay: 0.1s;">
+            <div class="skill-icon">JS</div>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-tile" data-reveal style="--delay: 0.15s;">
+            <div class="skill-icon">R</div>
+            <span>React</span>
+          </div>
+          <div class="skill-tile" data-reveal style="--delay: 0.2s;">
+            <div class="skill-icon">N</div>
+            <span>Next.js</span>
+          </div>
+          <div class="skill-tile" data-reveal style="--delay: 0.25s;">
+            <div class="skill-icon">Node</div>
+            <span>Node.js</span>
+          </div>
+          <div class="skill-tile" data-reveal style="--delay: 0.3s;">
+            <div class="skill-icon">EX</div>
+            <span>Express.js</span>
+          </div>
+          <div class="skill-tile" data-reveal style="--delay: 0.35s;">
+            <div class="skill-icon">DB</div>
+            <span>MongoDB</span>
+          </div>
+          <div class="skill-tile" data-reveal style="--delay: 0.4s;">
+            <div class="skill-icon">Git</div>
+            <span>Git</span>
+          </div>
+          <div class="skill-tile" data-reveal style="--delay: 0.45s;">
+            <div class="skill-icon">S</div>
+            <span>Sass</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section" aria-labelledby="contact-heading">
+    <section id="experience" class="section" aria-labelledby="experience-title">
       <div class="container">
-        <div class="section-header">
-          <h2 id="contact-heading">Contact</h2>
-          <p class="section-subtitle">Invite recruiters to reach out. Replace links with your real profiles.</p>
+        <header class="section-header">
+          <h2 id="experience-title">Experience</h2>
+          <p>My professional journey and educational background.</p>
+        </header>
+        <div class="timeline">
+          <article class="timeline-item" data-reveal style="--delay: 0s;">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Software Engineering Intern</h3>
+                  <p class="timeline-org">[Company]</p>
+                </div>
+                <span class="timeline-date">Jun 2024 – Aug 2024</span>
+              </div>
+              <ul>
+                <li>Built responsive features with accessibility-first components.</li>
+                <li>Partnered with designers to deliver a clean, minimal UI system.</li>
+                <li>Reduced load times through performance profiling and caching.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal style="--delay: 0.1s;">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Frontend Developer</h3>
+                  <p class="timeline-org">[Company]</p>
+                </div>
+                <span class="timeline-date">Jan 2024 – May 2024</span>
+              </div>
+              <ul>
+                <li>Created reusable component libraries for multiple product teams.</li>
+                <li>Implemented state management flows and API integrations.</li>
+                <li>Guided peer code reviews and documentation efforts.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal style="--delay: 0.2s;">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Computer Science Student</h3>
+                  <p class="timeline-org">University of California, Irvine</p>
+                </div>
+                <span class="timeline-date">Sep 2022 – Present</span>
+              </div>
+              <ul>
+                <li>Studying computer science with a focus on web and systems development.</li>
+                <li>Relevant coursework: Data Structures, Algorithms, Web Development.</li>
+                <li>GPA: 3.8/4.0 (replace as needed).</li>
+              </ul>
+            </div>
+          </article>
         </div>
-        <div class="contact-card">
-          <!-- TODO: Update email, GitHub, LinkedIn, and resume links -->
-          <p class="contact-text">Interested in collaborating or learning more? Let's talk.</p>
-          <div class="contact-links">
-            <a href="mailto:youremail@example.com">youremail@example.com</a>
-            <a href="https://github.com/" aria-label="GitHub profile">GitHub</a>
-            <a href="https://www.linkedin.com/" aria-label="LinkedIn profile">LinkedIn</a>
-            <a href="resume.pdf" aria-label="Download resume">Resume</a>
-          </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container contact">
+        <header class="section-header">
+          <h2 id="contact-title">Contact</h2>
+          <p>Interested in collaborating or learning more? Let's talk.</p>
+        </header>
+        <a class="button primary" href="mailto:hello@example.com">hello@example.com</a>
+        <div class="hero-links" aria-label="Contact links">
+          <a href="https://github.com/" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.55 2.87 8.41 6.84 9.77.5.1.68-.22.68-.48v-1.7c-2.78.62-3.37-1.36-3.37-1.36-.45-1.2-1.11-1.52-1.11-1.52-.9-.64.07-.63.07-.63 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.34 1.11 2.91.85.09-.67.35-1.11.63-1.37-2.22-.26-4.56-1.15-4.56-5.12 0-1.13.39-2.06 1.03-2.79-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.07a9.4 9.4 0 0 1 5 0C17.1 5.26 17.94 5.54 17.94 5.54c.55 1.43.2 2.5.1 2.75.64.73 1.03 1.66 1.03 2.79 0 3.98-2.34 4.85-4.58 5.1.36.32.68.95.68 1.92v2.85c0 .26.18.59.69.48A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4.98 3.5a2.48 2.48 0 1 1 0 4.96 2.48 2.48 0 0 1 0-4.96zM3 8.98h3.96V21H3V8.98zM9.2 8.98h3.8v1.64h.05c.53-1 1.82-2.05 3.74-2.05 4 0 4.74 2.7 4.74 6.2V21h-3.96v-5.35c0-1.28-.02-2.93-1.79-2.93-1.79 0-2.06 1.4-2.06 2.84V21H9.2V8.98z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="mailto:hello@example.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.5l9 5.25 9-5.25V7H3zm18 10V9.75l-8.53 4.98a1 1 0 0 1-.94 0L3 9.75V17h18z" fill="currentColor"/>
+            </svg>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
-      <p>© 2024 Your Name. Built with care for GitHub Pages.</p>
-      <a class="back-to-top" href="#top">Back to top</a>
+      <p>© 2024 Alejandro Nava. Built for GitHub Pages.</p>
+      <a href="#top">Back to top</a>
     </div>
   </footer>
 
