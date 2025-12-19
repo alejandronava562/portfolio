@@ -9,9 +9,9 @@ Open `index.html` in your browser to view the site locally.
 ## GitHub Pages Setup
 
 1. Push this repository to GitHub.
-2. In the GitHub repo, go to **Settings → Pages**.
+2. In the GitHub repo, go to **Settings -> Pages**.
 3. Under **Build and deployment**, select **Deploy from a branch**.
-4. Choose the `main` branch and the `/root` folder.
+4. Choose the `main` branch and the `/ (root)` folder.
 5. Click **Save**. Your site will be available at the provided GitHub Pages URL.
 
 ## Customize Content
